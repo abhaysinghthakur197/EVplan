@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@300&display=swap");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Alegreya", sans-serif;
+}
+
+
+/* electric vehicle heading start here */
+
+/* .gov-scheme h1 {
+    font-weight: bold;
+}
+
+.gov-scheme {
+    width: 100%;
+    margin-top: 100px;
+    padding: 40px 20px;
+    border: 2px solid black;
+    /* // background-image: url("bgimg2.png"); */
+/* }
+
+
+
+/* .gov-scheme p {
+    font-size: 14px;
+    margin: 15px 58px;
+    /* text-align: center; */
+/* } */ 
+
+.container {
+    margin-top: 100px;
+}
+
+.pt-30 {
+    padding-top: 30 !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    
+}
+
+h1 {
+    font-size: 34px;
+    color: #6b705c;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-top: 40px;
+    position: relative;
+    
+    
+}
+.ev-awareness-para {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: #000;
+    padding: 15px 20px;
+}
+
+
+
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 135, 135);
+}
+
+
+
+
+.faster-adoption-heading
+{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    color: #8f1911;
+    padding-bottom: 20px;
+}
+/* end here */
+
+/* policy Img */
+
+/* end here */

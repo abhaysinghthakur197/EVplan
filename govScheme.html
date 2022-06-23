@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="govScheme.css">
+    <!-- adding bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- adding jquery  -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end here -->
+
+    <!-- chat bot code start here -->
+
+    <script>(function (w, d) { w.CollectId = "6294a064faa7943a0bbb8904"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+
+    <!-- end here -->
+
+    <!-- <script src="main.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        (function ($) { // Begin jQuery
+            $(function () { // DOM ready
+                // If a link has a dropdown, add sub menu toggle.
+                $('nav ul li a:not(:only-child)').click(function (e) {
+                    $(this).siblings('.nav-dropdown').toggle();
+                    // Close one dropdown when selecting another
+                    $('.nav-dropdown').not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+                // Clicking away from dropdown will remove the dropdown class
+                $('html').click(function () {
+                    $('.nav-dropdown').hide();
+                });
+                // Toggle open and close nav styles on click
+                $('#nav-toggle').click(function () {
+                    $('nav ul').slideToggle();
+                });
+                // Hamburger to X toggle
+                $('#nav-toggle').on('click', function () {
+                    this.classList.toggle('active');
+                });
+            }); // end DOM ready
+        })(jQuery); // end jQuery
+    </script>
+    <title>Government Scheme</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <section class="navigation">
+                <div class="nav-container">
+                    <div class="brand">
+                        <a href="main.html"><img style="width: 150px;height: 70px;" src="logo.png" alt="logo"></a>
+                    </div>
+                    <nav>
+                        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="main.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="Evprocess.html">EV Process</a>
+                            </li>
+                            <li>
+                                <a href="#">Government Scheme</a>
+                            </li>
+                            <li>
+                                <a href="#">Vehicles</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="main.html">Bikes</a>
+                                    </li>
+                                    <li>
+                                        <a href="main.html">Cars</a>
+                                    </li>
+                                    <li>
+                                        <a href="main.html">Transports</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <!-- <a href="#!">News</a> -->
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="row pt-30">
+                    <div class=" col-md-12 col-lg-12 col-sm-12">
+
+                        <div class="Govt-scheme-heading">
+                            <h1 class="text-center">Government Scheme for <scan class="text-danger underline">Electric
+                                    Vehicle's</scan>
+                            </h1>
+                            <h5 class="text-center"> A brief overview of option </h5>
+                        </div>
+                        <p class="ev-awareness-para">To assist the acceptance of electric vehicles (EVs) in the country,
+                            the central government
+                            has
+                            announced
+                            a number of
+                            promotional measures in the previous ten years, including tax incentives for electric
+                            vehicle
+                            owners,
+                            public EV charging
+                            infrastructure development, and so on.</p>
+                        <p class="ev-awareness-para">Timeline for various initiatives taken by policymakers and
+                            regulators:</p>
+                        <div class="policyImg  pt-4 d-flex align-items-center justify-content-center">
+                            <img src="govNationalPolicy.jpg" alt="" width="90%" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <p class="faster-adoption-heading">
+                            1.Faster Adoption and Manufacturing of (Hybrid and) Electric Vehicles (FAME) – I and II:
+                        </p>
+                        <p class="ev-awareness-para pt-2">
+                            FAME, or Faster Adoption and Manufacturing of (Hybrid and) Electric vehicles, is currently
+                            India’s flagship scheme for
+                            promoting electric mobility. It was launched by DHI in 2015. Currently in its 2nd phase of
+                            implementation, FAME-II is
+                            being implemented for a period of 3 years, eff. 1st April 2019 with a budget allocation of
+                            10,000 Cr which includes a
+                            spillover from FAME-I of Rs 366 Cr. The incentives offered in the scheme are:
+                        </p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="table-responsible frontend-table-view">
+                                <table class="table table-bordered border-dark table-hover">
+                                    <thead class="table-dark">
+                                        <tr class="text-light">
+                                            <th>S.No</th>
+                                            <th class="text-center">Total Approximate Incentives</th>
+                                            <th>Approximate Size of Battery</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <b>Two wheeler:</b>
+                                                Rs 15000/- per kWh upto 40% of the cost of vehicles
+                                            </td>
+                                            <td>
+                                                <b>Two Wheeler:</b>
+                                                2 kWh
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <b>Three Wheeler:</b>
+                                                Rs 10000/- per kWh
+                                            </td>
+                                            <td>
+                                                <b>Three Wheeler:</b>
+                                                5kWh
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <b>Four Wheeler:</b>
+                                                Rs 10000/- per kWh
+                                            </td>
+                                            <td>
+                                                <b>Four Wheeler:</b>
+                                                15kWh
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <b> E Buses:</b>
+                                                Rs 20000/- per kWh
+                                            </td>
+                                            <td>
+                                                <b> E Buses</b>
+                                                250kWh
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <b>E Trucks:</b>
+                                                Rs 20000/- per kWh
+                                            </td>
+                                            <td></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <p class="ev-awareness-para pt-2">
+                            The Department of Heavy Industries has also sanctioned 2636 charging stations in 62
+                            cities across 24 States/UTs under
+                            FAME India scheme phase II. State-wise allocation of these charging stations is as
+                            follows:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- govt.scheme article start here -->
+        <section class="Govt-scheme-article container" style="margin-top: 40px;">
+            <div class="Govt-scheme-cover">
+                <div class="Govt-subsidy-bike-scooter-body" style="margin-top: 60px;">
+
+                    <h2>Subsidy on electric scooter and bikes: State-wise data</h2>
+                    <p>Similar to electric car/SUV subsidies, electric two-wheelers are also eligible for state
+                        government-provided subsidies.
+                        Refer to the table below for electric scooter subsidy and electric bike subsidy in each state.
+                    </p>
+                    <div class="Govt-subsidy-bike-scooter-table">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">State</th>
+                                    <th scope="col">Subsidy (per kWh) </th>
+                                    <th scope="col">Maximum subsidy</th>
+                                    <th scope="col">Discount on road tax</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maharashtra</td>
+                                    <td>Rs. 5,000</td>
+                                    <td>Rs. 25,000</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>Meghalaya</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Gujarat</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                    <td>50%</td>
+                                </tr>
+                                <tr>
+                                    <td>Assam</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>West Bengal</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                    <td>100%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="https://ackodrive.com/ev-guide/subsidy-on-electric-vehicles/" class="text-dark"
+                            target="_blank" style="float: right;">Learn more</a>
+                    </div>
+                </div>
+                <div class="Govt-scheme-body" style="margin-top: 40px;">
+                    <div class="Govt-subsidy-car">
+                        <h2>State-wise electric car subsidies</h2>
+                        <p>Apart from the national FAME II scheme, each state has its policy for e-mobility and criteria
+                            for
+                            electric car subsidy.
+                            So, the state government-provided incentives may vary from one state to another. The below
+                            table
+                            lists the state-wise
+                            government subsidies for electric cars and SUVs.</p>
+
+                        <div class="Govt-subsity-car-table ">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">State</th>
+                                        <th scope="col">Subsidy (per kWh) </th>
+                                        <th scope="col">Maximum subsidy</th>
+                                        <th scope="col">Discount on road tax</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maharashtra</td>
+                                        <td>Rs. 5,000</td>
+                                        <td>Rs. 2,50,000</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gujarat</td>
+                                        <td>Rs. 10,000</td>
+                                        <td>Rs. 1,50,000</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Meghalaya</td>
+                                        <td>Rs. 4,000</td>
+                                        <td>Rs. 60,000</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Assam</td>
+                                        <td>Rs. 10,000</td>
+                                        <td>Rs. 1,50,000</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bihar</td>
+                                        <td>Rs. 10,000</td>
+                                        <td>Rs. 1,50,000</td>
+                                        <td>100%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="https://ackodrive.com/ev-guide/subsidy-on-electric-vehicles/" class="text-dark"
+                                target="_blank" style="float: right;">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end here -->
+
+
+
+
+
+        <!-- footer -->
+        <section class="footer mt-5 ">
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+                    <a href="main.html"><img style="width: 150px;height: 70px;" src="logo.png" alt="logo"></a>
+
+
+                    <p class="footer-links">
+                        <a href="main.html" class="link-1">Home</a>
+
+                        <a href="#">Vehicle</a>
+
+                        <a href="Evprocess.html">Ev Process</a>
+
+                        <a href="about.html">About</a>
+
+                        <a href="#">Contact</a>
+                    </p>
+
+                </div>
+
+                <div class="footer-center">
+
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>01 , Block G5</span> Chouhan Town, Bhilai, Chhattisgarh</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 8103715515</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="Evplanofficial@gmail.com">Evplanofficial@gmail.com</a></p>
+                    </div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        We are here to help by providing all the information related to electric vehicle
+                        ecosystem.
+                        Here you can find the best and suitable electric vehicle of your choice.
+
+                    </p>
+
+                    <div class="footer-icons">
+
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+
+                    </div>
+
+                </div>
+
+            </footer>
+        </section>
+        <!-- end here -->
+    </main>
+
+</body>
+
+</html>

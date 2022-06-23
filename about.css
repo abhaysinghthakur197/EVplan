@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@300&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Alegreya", sans-serif;
+}
+/* .about {
+  position: relative;
+}
+.First_section {
+  position: absolute;
+  top: 8px;
+}
+.Second_section {
+  position: absolute;
+  top: 70vh;
+} */
+
+.About_heading {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+}
+p {
+  color: black;
+}
+.Second_section h3 {
+  color: #2da77e;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,964 @@
+// import fonts
+// @import url('https://fonts.googleapis.com/css2?family=Share:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share:wght@700&family=Tai+Heritage+Pro&display=swap');
+
+
+// Navigation Variables
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #86c5c1;
+$nav-font-color: #ffffff;
+$link-hover-color: #5209029e;
+
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  width: 100%;
+}
+
+// Logo and branding
+.brand {
+  position: absolute;
+  padding-left: 5px;
+  float: left;
+  line-height: $nav-height;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  a,
+  a:visited {
+    color: $nav-font-color;
+    text-decoration: none;
+  }
+}
+
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+// Navigation
+nav {
+  float: right;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      position: relative;
+      a,
+      a:visited {
+        display: block;
+        padding: 0 20px;
+        // margin: 1px 0;
+        // height: 2.9rem;
+        line-height: $nav-height;
+        background: $nav-background;
+        color: $nav-font-color;
+        text-decoration: none;
+        &:hover {
+          background: $link-hover-color;
+          color: $nav-font-color;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: " ▾";
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        border: 1px solid #ffffff;
+        ul li:last-child {
+          border-bottom: none;
+        }
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(155, 67, 67, 0.15);
+}
+
+//main
+
+.background_section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background_section .right_section {
+  padding-right: 3px;
+}
+.background_section .left_section {
+  padding-left: 100px;
+}
+
+.left_section h2 {
+  font-size: 20px;
+  color: rgb(188, 161, 161);
+  font-weight: 500;
+  margin-top: 90px;
+}
+.left_section .dynamic-text {
+  height: 62px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-text li {
+  list-style: none;
+  position: relative;
+  right: 30px;
+  top: 0%;
+  animation: slice 6.5s steps(4) infinite;
+}
+
+@keyframes slice  {
+  100%{
+    top: -242px;
+  }
+}
+.dynamic-text li span h1 {
+  position: relative;
+}
+.dynamic-text li span h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  // background: $nav-font-color;
+  // border: 2px solid yellow;
+  // border-left: 3px solid rgb(240, 29, 29);
+  // animation: typing 1.3s steps(6) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}
+
+.left_section h1 {
+  font-size: 40px;
+  // text-transform: capitalize;
+  font-weight: 700;
+  margin: 13px 0;
+}
+
+.left_section p {
+  color: rgb(188, 161, 161);
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.left_section button {
+  padding: 15px 45px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  // font-family: 'Share', cursive;
+      font-family: 'Share', cursive;
+      font-family: 'Tai Heritage Pro', serif;
+  // background-image: linear-gradient(to right, #e45f0d, #a8952a, #649bff);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  border-radius: 10px;
+}
+
+
+// button css start here
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #d69983e3;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+// end here
+
+// electric vehicle description section
+.electric_vehicle {
+  width: 100%;
+  margin-top: 60px;
+  // border: 2px solid black;
+  // background-image: url("bgimg2.png");
+
+  h1 {
+    font-size: 34px;
+    color: #6b705c;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 15px;
+    font-family: 'Share', cursive;
+    
+      font-family: 'Tai Heritage Pro', serif;
+  }
+  p {
+    font-size: 14px;
+    margin: 15px 58px;
+    text-align: center;
+    font-family: 'Share', cursive;
+    
+      font-family: 'Tai Heritage Pro', serif;
+  }
+}
+
+// car display section
+
+.Four_wheeler,.Two_wheeler,.Transport_vehicle {
+  // font-family: "Alegreya", sans-serif;
+  font-family: 'Share', cursive;
+  
+    font-family: 'Tai Heritage Pro', serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
+  color: #8f1911;
+  padding-bottom: 20px;
+}
+
+.Four_wheeler::before {
+  display: inline-block;
+  content: "";
+  width: 62px;
+  height: 0px;
+  background: #185589;
+  border: 2px solid #185589;
+  margin-bottom: 7px;
+  margin-right: 20px;
+}
+
+.Two_wheeler::before {
+  display: inline-block;
+  content: "";
+  width: 62px;
+  height: 0px;
+  background: #185589;
+  border: 2px solid #185589;
+  margin-bottom: 7px;
+  margin-right: 20px;
+}
+
+.Transport_vehicle::before {
+  display: inline-block;
+  content: "";
+  width: 62px;
+  height: 0px;
+  background: #185589;
+  border: 2px solid #185589;
+  margin-bottom: 7px;
+  margin-right: 20px;
+}
+
+// Adding card of four wheeler
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card {
+  width: 100%;
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.05, 1.06, 1);
+  
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: bold;
+    // text-align: center;
+    font-family: 'Share', cursive;
+    font-family: 'Tai Heritage Pro', serif;
+  }
+  p{
+    font-size: 16px;
+    color: #1f201a;
+    font-family: 'Share', cursive;
+    font-family: 'Tai Heritage Pro', serif;
+  }
+
+  table tr td {
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f201a;
+    line-height: 23px;
+    font-family: 'Share', cursive;
+    font-family: 'Tai Heritage Pro', serif;
+  }
+  .card-btn {
+    margin-left: 90px;
+    background-color: #e0adb6;
+    color: rgb(63, 56, 56);
+    font-weight: bold;
+    font-family: "JetBrains Mono", monospace;
+  }
+  // .card-btn:hover {
+  //   border: 2px solid rgb(49, 142, 192);
+  //   box-shadow: .8px .3px .2px black;
+  // }
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev .ccarousel-control-next {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  color: rgb(207, 13, 13);
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+
+
+// end here
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+/* Mobile navigation */
+@media only screen and (max-width: 850px) {
+  .background_section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .background_section .right_section {
+    padding-left: 50px;
+  }
+  .background_section .left_section {
+    padding-left: 50px;
+  }
+}
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+@media only screen and (max-width: 798px) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: $nav-height 0 15px;
+    ul {
+      display: none;
+      li {
+        float: none;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+    // ul li {
+    //   border: none;
+    // }
+  }
+}
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $nav-font-color;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+/* 
+// Page content
+article {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 10px;
+} */
+
+
+// Ev-process-article
+
+.Ev-process-article {
+  // border: 2px solid black;
+  height: 96%;
+
+  .Ev-process-cover .Ev-process-heading h1 {
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Share', cursive;
+    font-family: 'Tai Heritage Pro', serif;
+  }
+  .Ev-process-card {
+    // border: 1px solid red;
+    .col {
+      // border: 1px solid blue;
+
+      .Ev-process-body {
+        h5 {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Share', cursive;
+        font-family: 'Tai Heritage Pro', serif;
+      }
+      p{
+        font-size: 15px;
+        font-family: 'Share', cursive;
+        font-family: 'Tai Heritage Pro', serif;
+        a {
+          color: black;
+          text-underline-offset: 10px;
+        }
+      };
+    }
+    }
+  }
+}
+
+// end here
+
+
+// Govt. shceme article start here
+.Govt-scheme-article .Govt-scheme-heading h1 {
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Share', cursive;
+    font-family: 'Tai Heritage Pro', serif;
+}
+.Govt-subsidy-bike-scooter-body .Govt-subsidy-car h5 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Share', cursive;
+    font-family: 'Tai Heritage Pro', serif;
+}
+.Govt-subsidy-bike-scooter-body p {
+  font-size: 15px;
+  // font-family: 'Share', cursive;
+  // font-family: 'Tai Heritage Pro', serif;
+
+  a {
+    color: black;
+    text-underline-offset: 10px;
+  }
+}
+
+// end here
+
+// contact us start here
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+  // width: 100%;
+}
+
+// .container {
+//   flex: 0 1 700px;
+//   margin: auto;
+//   padding: 10px;
+// }
+
+.screen {
+  position: relative;
+  // background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(117, 108, 108, 0.4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #d9d9e3;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  // margin-right: auto;
+}
+
+
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #000;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: 'Share', cursive;
+  font-family: 'Tai Heritage Pro', serif;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ea1010;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 12px;
+  color: #888;
+  font-family: 'Share', cursive;
+  font-family: 'Tai Heritage Pro', serif;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: rgb(15, 14, 14);
+  font-size: 15px;
+  font-family: 'Share', cursive;
+  font-family: 'Tai Heritage Pro', serif;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  border-radius: 10px;
+}
+
+.app-form-button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+// end here
+
+// footer start here
+.footer-distributed {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #a20202;
+  font: normal 36px 'Alegreya', sans-serif;
+  // font-family: "Alegreya",
+  // sans-serif;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: rgb(4, 6, 6);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
+
+// end here
+
+
+
+
+
+
+
+
+
+
+
+

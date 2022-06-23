@@ -1,0 +1,2093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- adding bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- adding jquery  -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end here -->
+
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- end here -->
+
+    <!-- chat bot code start here -->
+
+    <script>(function (w, d) { w.CollectId = "6294a064faa7943a0bbb8904"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+
+    <!-- end here -->
+
+    <!-- <script src="main.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        (function ($) { // Begin jQuery
+            $(function () { // DOM ready
+                // If a link has a dropdown, add sub menu toggle.
+                $('nav ul li a:not(:only-child)').click(function (e) {
+                    $(this).siblings('.nav-dropdown').toggle();
+                    // Close one dropdown when selecting another
+                    $('.nav-dropdown').not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+                // Clicking away from dropdown will remove the dropdown class
+                $('html').click(function () {
+                    $('.nav-dropdown').hide();
+                });
+                // Toggle open and close nav styles on click
+                $('#nav-toggle').click(function () {
+                    $('nav ul').slideToggle();
+                });
+                // Hamburger to X toggle
+                $('#nav-toggle').on('click', function () {
+                    this.classList.toggle('active');
+                });
+            }); // end DOM ready
+        })(jQuery); // end jQuery
+    </script>
+    <title>Document</title>
+</head>
+
+<body class="body" onload="myFunction()">
+    <div id="preloader"></div>
+    <!-- For preloader timing  -->
+
+
+    <!-- end here -->
+
+    <main class="main1">
+
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="main.html"><img style="width: 150px;height: 70px;" src="logo.png" alt="logo"></a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="Evprocess.html">EV Process</a>
+                        </li>
+                        <li>
+                            <a href="govScheme.html">Government Scheme</a>
+                        </li>
+                        <li>
+                            <a href="#!">Vehicles</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#findOut_button_bike">Bikes</a>
+                                </li>
+                                <li>
+                                    <a href="#findOut_button">Cars</a>
+                                </li>
+                                <li>
+                                    <a href="#findOut_button_transports">Transports</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!-- <a href="#!">News</a> -->
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <div class="background_section">
+            <section class="left_section">
+                <h2>Hello folks!</h2>
+                <ul class="dynamic-text">
+                    <li>
+                        <span>
+                            <h1>Welcome To <span class="text-danger">EV</span><span><i>plan</i></span>
+                            </h1>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <h1>Know All <span class="text-danger">About</span> <span
+                                    class="text-danger">Electric</span><span><i>Vehicle's</i></span>
+                            </h1>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <h1>Get All Govt. <span class="text-danger">Scheme</span><span><i>Idea</i></span></h1>
+                        </span>
+                    </li>
+                </ul>
+
+                <p>Place To understand the EV market better.</p>
+                <button class="button-30" role="button">
+                    <a href="#findOut_button" class="text-light" style="text-decoration: none;">Find Out</a>
+                </button>
+
+            </section>
+            <section class="right_section mt-5">
+                <figure>
+                    <img style="width: 70%; height: 80vh;" src="66124.jpg" alt="CarImage">
+                </figure>
+            </section>
+        </div>
+
+        <section class="electric_vehicle container">
+            <h1>Electric Vehicle</h1>
+            <p>An EV is a shortened acronym for an electric vehicle. EVs are vehicles
+                that are either partially or fully powered on electric power.
+                An EV operates on an electric motor, instead of an internal-combustion engine that generates power by
+                burning a mix of
+                fuel and gases. Therefore, such as vehicle is seen as a possible replacement for current-generation
+                automobile, in order
+                to address the issue of rising pollution, global warming, depleting natural resources, etc.</p>
+            <p>The standard for modern battery electric vehicles is now considered to be lithium ion batteries as they
+                have a greater
+                longevity and are excellent at retaining energy, with a self discharge rate of just 5% per month.</p>
+        </section>
+
+
+        <section class="Car_display_Four_Wheeler container mt-5" id="findOut_button">
+            <p class="Four_wheeler mx-4 my-4">" Four Wheeler Electric Vehicle's "</p>
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="4WheelerImages/TataNexon.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tata Nexon EV</h5>
+                                    <country class="card-text">
+                                        <p>
+                                            The electric version of the Nexon, called the Nexon EV launched in country
+                                            in
+                                            January
+                                            2020.
+                                        </p>
+                                        <table class="table">
+                                            <tr>
+                                                <td><span
+                                                        class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                        style="font-size: 50px;">
+                                                        currency_rupee
+                                                    </span>
+                                                    <br>
+                                                    Rs. 14.78 - 17.40 Lakh
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                        style="font-size: 50px;">
+                                                        electric_car
+                                                    </span>
+                                                    <br>
+                                                    Driving Range : 312Km
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span
+                                                        class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                        style="font-size: 50px;">
+                                                        battery_charging_90
+                                                    </span>
+                                                    <br>
+                                                    Capacity :30.2KWH
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                        style="font-size: 50px;">
+                                                        history_toggle_off
+                                                    </span>
+                                                    <br>
+                                                    Charging Time : 8.5Hr @ 230V
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <a href="TataNexon.html" class="btn card-btn">Know more</a>
+                                        </a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="TataTigorEvImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tata Tigor EV</h5>
+
+                                    <div class="card-text">
+                                        <p>
+                                            The price of Tata Tigor EV starts at Rs. 12.49 Lakh and
+                                            goes upto Rs. 13.64 Lakh. Tata Tigor EV is offered in 4 variants.
+
+                                        </p>
+                                        <table class="table">
+                                            <tr>
+                                                <td><span
+                                                        class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                        style="font-size: 50px;">
+                                                        currency_rupee
+                                                    </span>
+                                                    <br>
+                                                    Rs. 12.49 - 13.64 Lakh
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                        style="font-size: 50px;">
+                                                        electric_car
+                                                    </span>
+                                                    <br>
+                                                    Driving Range : 306Km
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span
+                                                        class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                        style="font-size: 50px;">
+                                                        battery_charging_90
+                                                    </span>
+                                                    <br>
+                                                    Capacity :26KWH
+                                                </td>
+                                                <td>
+                                                    <span
+                                                        class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                        style="font-size: 50px;">
+                                                        history_toggle_off
+                                                    </span>
+                                                    <br>
+                                                    Charging Time : 8.5Hr @ 230V
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <a href="#" class="btn card-btn">Know more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="Mhindra/MahindraVeriotoImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mahindra E Verito</h5>
+                                    <p class="card-text">
+                                        Mahindra has launched the e-Verito sedan at Rs 9.5 Lakh for the base D2 variant.
+                                        The D4 and D6 variants are priced at Rs
+                                        9.75 lakh and Rs 10 lakh respectively.The car is based on Mahindra’s
+                                        slow-selling Verito
+                                        sedan that is otherwise offered with a 1.5-litre diesel engine.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 9.13 - 9.47 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 110Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :21.2KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 11.30Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="hyundai/HyundaiKonaImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hyundai Kona Electric</h5>
+                                    <p class="card-text">
+                                        The Kona in India comes with a 39.2kWh battery pack along with a claimed range
+                                        of 452km.There are only two variants on offer with the exact same
+                                        specifications: Premium and Premium Dual-Tone.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 23.84 - 24.04 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 452Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :39.2KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 6Hr 10min
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="TataAltosImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tata Altos EV</h5>
+                                    <p class="card-text">Propelling the Tata Altroz EV could be the same battery pack
+                                        that is currently used in the Nexon EV. However, the model
+                                        is likely to receive a different power output and driving range.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 12.00 - 15.00 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 306Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :26KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 8hr @ 230V
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="MG/MGImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MG ZS EV 2022</h5>
+                                    <p class="card-text">
+                                        The latest MG ZS EV, a SUV from MG, was launched in India in Mar, 2022. ZS EV
+                                        has received 73% rating from our users.
+                                        ZS EV is available in 4 colours - Currant Red, Ashen Silver, Sable
+                                        Black, Ferris White.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 21.99 - 25.88 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 461Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :50.3KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 16hr @ 230V
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-bs-interval="5000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="kia/KiaEv6Image1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kia EV6</h5>
+                                    <p class="card-text">The price of Kia EV6 starts at Rs. 59.95 Lakh and goes upto Rs.
+                                        64.95 Lakh. Kia EV6 is offered in 2 variants - the base
+                                        model of EV6 is GT line and the top variant Kia EV6 GT line AWD which comes at a
+                                        price tag of Rs. 64.95 Lakh.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 59.95 - 64.95 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 500Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :77.4KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 16hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="Mg-hector/MGhectorImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MG Hector Plus</h5>
+                                    <p class="card-text">
+                                        The latest MG Hector Plus, a SUV from MG, was launched in India in Jul, 2020.
+                                        Hector Plus has received 88% rating from
+                                        our users. Hector Plus is preferred for its Styling and Comfort.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 14.65 - 20.94 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 301Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :40.3KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 13hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="Audi/AudiE-tronImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Audi e-tron</h5>
+                                    <p class="card-text">The price of Audi e-tron starts at Rs. 1.01 Cr and goes upto
+                                        Rs. 1.19 Cr. Audi e-tron is offered in 3 variants - the
+                                        base model of e-tron is 50 and the top variant Audi e-tron 55 Sportback which
+                                        comes at a price tag of Rs. 1.19 Cr.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.01- 1.19CR
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 264-379Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :71KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 46.7h @ 220V
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- two wheeler -->
+        <section class="display_Two_Wheeler container" id="findOut_button_bike">
+            <p class="Two_wheeler mx-4 my-4">"Two Wheeler Electric Vehicles"</p>
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="Ola/OlaS1Image1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ola S1</h5>
+                                    <p class="card-text">The price of Ola S1 starts at Rs. 94,999 and goes upto Rs. 1.24
+                                        Lakh. Ola S1 is offered in 2 variants - STD and the top
+                                        variant S1 Pro which comes at a price tag of Rs. 1.24 Lakh.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 94,999 - 1.24 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 181Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :8500W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 6.30Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="olas1.html" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="Anther/Ather-450Image1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ather 450X</h5>
+                                    <p class="card-text">
+                                        The price of Ather 450X starts at Rs. 1.24 Lakh and goes upto Rs. 1.43 Lakh.
+                                        Ather 450X is offered in 2 variants - Ather
+                                        450 Plus and the top variant 450X Ather 450X which comes at a price tag of Rs.
+                                        1.43 Lakh.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.24- 1.43 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 116Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :6000W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 5.45Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="Tvs/TVS iQube ElectricImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">TVS iQube Electric</h5>
+                                    <p class="card-text">
+                                        The price of TVS iQube Electric starts at Rs. 1.62 Lakh and goes upto Rs. 1.65
+                                        Lakh. TVS iQube Electric is offered in 3
+                                        variants - ST, STD and the top variant iQube Electric S which comes at a price
+                                        tag of Rs. 1.65 Lakh.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.62 - 1.65 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 75-100Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :4.4Kw
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 5.45Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="Revolt400/RevoltEV400Image2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Revolt RV400</h5>
+                                    <p class="card-text">Revolt RV400 price start at Rs. 1.25 Lakh (Ex-Showroom). Revolt
+                                        RV400 is offered in only one variant - STD.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.25 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 150Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :3000W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 4.5Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="BajajChetak/BajajChetak.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bajaj Chetak</h5>
+                                    <p class="card-text">
+                                        Bajaj Chetak is a electric scooter available at a price of Rs. 1.34 Lakh in
+                                        India. It is available in only one variant
+                                        and 4 colours. Chetak goes 95km in a single charge. The Bajaj Chetak gets disc
+                                        brakes in the front and drum brakes at
+                                        the rear. The Bajaj Chetak weighs 132 kg.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.34 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 95Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :4080W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 5Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="Hero Electric Artia/HeroElectricArtiaImage1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hero Electric Atria</h5>
+                                    <p class="card-text">Hero Electric Atria price start at Rs. 71,690 (Ex-Showroom).
+                                        Hero Electric Atria is offered in only one variant - LX.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 71,690/-
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 250Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :85Kw
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 4-5 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="Bounce Infinity/Bounce-InfinityImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bounce Infinity E1</h5>
+                                    <p class="card-text">The price of Bounce Infinity E1 starts at Rs. 45,099 and goes
+                                        upto Rs. 69,999. Bounce Infinity E1 is offered in 2
+                                        variants - Without Battery Pack and the top variant Infinity E1 With Battery
+                                        Pack which comes at a price tag of Rs.
+                                        69,999.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 45,099 - 69,999/-
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 85Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :1500W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 4Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="Ampere Magnus/Ampere MagnusImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ampere Magnus</h5>
+                                    <p class="card-text">The price of Ampere Magnus starts at Rs. 65,999 and goes upto
+                                        Rs. 73,999. Ampere Magnus is offered in 2 variants - 60
+                                        and the top variant Magnus EX which comes at a price tag of Rs. 73,999.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. Rs. 65,999 - 73,999
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 121Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :1200W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 5-6 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="simple energy one/simplaEnergyImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Simple Energy One</h5>
+                                    <p class="card-text">The price of Simple Energy One starts at Rs. 1.09 Lakh and goes
+                                        upto Rs. 1.44 Lakh. Simple Energy One is offered in 2
+                                        variants - STD and the top variant One Extra Range which comes at a price tag of
+                                        Rs. 1.44 Lakh.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.09 - 1.44 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 300+Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :4500W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 5-6 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- end here -->
+
+        <!-- transport vehicle -->
+        <section class="display_Transport_vehicle container" id="findOut_button_transports">
+            <p class="Transport_vehicle mx-4 my-4">"Transport Electric Vehicles"</p>
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="Mahindra rickshaw/Mahindra Ealfa rickshaw.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mahindra E-Alfa Mini Auto Rickshaw</h5>
+                                    <p class="card-text">Mahindra E-Alfa mini is an advanced Auto Rickshaw that is made
+                                        with high mobility solutions. This vehicle belongs to the
+                                        Mahindra brand, and hence this Auto Rickshaw is loaded with high-quality
+                                        features.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.26 - 1.28 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 85Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :48KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 5-6 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="Mahindra e-Alfa.html" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="Sarthi dlx rickshaw/saarthiDlxRickshawImage1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Saarthi DLX Auto Rickshaw</h5>
+                                    <p class="card-text">Saarthi DLX is an advanced Auto Rickshaw that is made with high
+                                        mobility solutions. This vehicle belongs to the Saarthi
+                                        brand.The Saarthi DLX has a robust Electric motor 1000 Watts motor powered by a
+                                        battery.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 0.90 - 1.00 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 120Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :1000W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 7-8 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="Udaan Rickshaw/UdaanRickshawImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Udaan Battery E Rickshaw Auto Rickshaw</h5>
+                                    <p class="card-text">This vehicle belongs to the Udaan brand.The Udaan Battery E
+                                        Rickshaw has a robust 1000W Water Resistant motor powered by a battery.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.42 - 1.45 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 75-120 Kms
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :1400W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 7-8 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="Atul Elite Cargo 3 Wheeler/AtulRickshawImage1.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Atul Elite Cargo 3 Wheeler</h5>
+                                    <p class="card-text">This vehicle belongs to the Atul brand.The Atul Elite Cargo has
+                                        a robust BLDC Electric Motor motor powered by a 100 battery.
+                                        The 12V 100 AH - Lead Acid battery of the vehicle can easily charge in 8-10
+                                        hours.The powerful motor of Atul Elite Cargo generates high power and torque.
+                                        The BLDC Electric Motor motor of a 3 Wheeler
+                                        provides high performance in tasks.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.09 - 1.44 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 80Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :100KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 8-10 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="TataRickshaw/tata-aceRickshawImage1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tata Ace Ev Mini Truck</h5>
+                                    <p class="card-text">The Tata Ace Ev has a robust motor powered by a 21.3 battery.
+                                        The Lithium Ion Iron phosphate (LFP) battery of the vehicle can easily charge in
+                                        6-7 Hours.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 7.05 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 154Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :21.3KWH
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 6-7 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="MahindraRickshawTransport/MahindraTrasportImage1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mahindra Treo Zor 3 Wheeler</h5>
+                                    <p class="card-text">This model comes from Mahindra house.You can get 10 Horsepower
+                                        with the cylinder and Advanced IP67 rated electric motor engine in this model.
+                                        The Mahindra
+                                        Treo Zor Three Wheeler generates 42 Nm of torque which is adequate for many
+                                        applications.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 3.77 - 4.12 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 125Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :7.37Kwh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 3Hr 50Min
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="MahindraRickshawTransport/SN SolarTransportImage1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">SN Solar Energy E Rickshaw Loader 3 Wheeler</h5>
+                                    <p class="card-text">SN Solar Energy Battery Operated E Rickshaw Loader is an
+                                        advanced 3 Wheeler that is made with high mobility solutions.
+                                        This vehicle belongs to the SN Solar Energy brand, and hence this 3 Wheeler is
+                                        loaded with high-quality features.</p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 0.90 - 0.95 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 300+Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :4500W
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 5-6 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block mx-5">
+                                <img src="MahindraRickshawTransport/LohiaTransportImage1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lohia Comfort F2F Auto Rickshaw</h5>
+                                    <p class="card-text">Lohia Comfort F2F is an advanced Auto Rickshaw that is made
+                                        with high mobility solutions. This vehicle belongs to the
+                                        Lohia brand, and hence this Auto Rickshaw is loaded with high-quality features.
+                                        The Lohia Comfort F2F has a robust motor powered by a battery.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.55 - 1.75 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 80Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :100Ah
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 6-7 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                <img src="MahindraRickshawTransport/MiniMetroGoldImage1.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mini Metro Gold SS Auto Rickshaw</h5>
+                                    <p class="card-text">This vehicle belongs to the Mini Metro brand.The Mini Metro
+                                        Gold SS has a robust Electric Motor motor powered by a battery.
+                                        Mini Metro Gold SS provides 22 kmph maximum speed.
+                                    </p>
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    currency_rupee
+                                                </span>
+                                                <br>
+                                                Rs. 1.00 - 1.04 Lakh
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    electric_car
+                                                </span>
+                                                <br>
+                                                Driving Range : 80Km
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    battery_charging_90
+                                                </span>
+                                                <br>
+                                                Capacity :130Ah
+                                            </td>
+                                            <td>
+                                                <span
+                                                    class="material-symbols-outlined d-flex align-content-center justify-content-center"
+                                                    style="font-size: 50px;">
+                                                    history_toggle_off
+                                                </span>
+                                                <br>
+                                                Charging Time : 9-10 Hr
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="#" class="btn card-btn">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- end here -->
+
+        <!-- Ev Process Start here -->
+
+        <section class="Ev-process-article container" style="margin-top: 90px;">
+            <div class="Ev-process-cover">
+                <div class="Ev-process-heading">
+                    <h1 class="text-center">Types of Electric Vehicles</h1>
+                    <h5 class="text-center"> A brief overview of option </h5>
+                </div>
+                <div class="Ev-process-card " style="margin-top: 60px;">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 px-2 py-2">
+                            <div class="col">
+                                <img src="BEV-image.jpg" alt="BEV image" class=" pt-2 " style="width: 90%; height:50%;">
+                                <div class="Ev-process-body">
+                                    <h5>Battery Electric Vehicles (BEVs)</h5>
+                                    <p>Powered solely by an electric battery, with no gas engine parts. Most BEVs are
+                                        capable of fast charging and L2 charging.
+                                        Zero emissions.<br>
+                                        <a href="Evprocess.html">Learn more</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <img src="hybrid-evs.png" alt="HEV image" class="pt-2" style="width: 90%; height:50%;">
+                                <div class="Ev-process-body">
+                                    <h5>Hybrid Electric Vehicles (HEVs)</h5>
+                                    <p>Low-emission vehicles that use an electric motor to assist gas-powered engines.
+                                        All energy comes from gasoline. Cannot
+                                        charge with EVgo.<br>
+                                        <a href="Evprocess.html">Learn more</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="PHEV-image.jpg" alt="HEV image" class="pt-2" style="width: 90%; height:50%;">
+                                <div class="Ev-process-body">
+                                    <h5>Plug-in Hybrid Electric Vehicles (PHEVs)</h5>
+                                    <p>Similar to a Hybrid, but with a larger battery and electric motor. Has a gas tank
+                                        and a charging port. Can charge by
+                                        using L2 chargers.<br>
+                                        <a href="Evprocess.html">Learn more</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="fuelevs.png" alt="HEV image" class="pt-2" style="width: 90%; height:50%;">
+                                <div class="Ev-process-body">
+                                    <h5>Fuel Cell Electric Vehicle(FCEV)</h5>
+                                    <p>FCEVs are also known as Zero-Emission Vehicles. They employ ‘fuel cell
+                                        technology’ to generate the electricity required
+                                        to run the vehicle.<br>
+                                        <a href="Evprocess.html">Learn more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end here -->
+
+
+        <!-- govt.scheme article start here -->
+        <section class="Govt-scheme-article container" style="margin-top: 90px;">
+            <div class="Govt-scheme-cover">
+                <div class="Govt-scheme-heading">
+                    <h1 class="text-center">Government Scheme for Electric Vehicle</h1>
+                    <h5 class="text-center"> A brief overview of option </h5>
+                </div>
+
+                <div class="Govt-subsidy-bike-scooter-body" style="margin-top: 60px;">
+
+                    <h5>Subsidy on electric scooter and bikes: State-wise data</h5>
+                    <p>Similar to electric car/SUV subsidies, electric two-wheelers are also eligible for state
+                        government-provided subsidies.
+                        Refer to the table below for electric scooter subsidy and electric bike subsidy in each state.
+                    </p>
+                    <div class="Govt-subsidy-bike-scooter-table">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">State</th>
+                                    <th scope="col">Subsidy (per kWh) </th>
+                                    <th scope="col">Maximum subsidy</th>
+                                    <th scope="col">Discount on road tax</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maharashtra</td>
+                                    <td>Rs. 5,000</td>
+                                    <td>Rs. 25,000</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>Meghalaya</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Gujarat</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                    <td>50%</td>
+                                </tr>
+                                <tr>
+                                    <td>Assam</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>West Bengal</td>
+                                    <td>Rs. 10,000</td>
+                                    <td>Rs. 20,000</td>
+                                    <td>100%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="Evprocess.html" class="text-dark" style="float: right;">Learn more</a>
+                    </div>
+                </div>
+                <div class="Govt-scheme-body" style="margin-top: 60px;">
+                    <div class="Govt-subsidy-car">
+                        <h5>State-wise electric car subsidies</h5>
+                        <p>Apart from the national FAME II scheme, each state has its policy for e-mobility and criteria
+                            for
+                            electric car subsidy.
+                            So, the state government-provided incentives may vary from one state to another. The below
+                            table
+                            lists the state-wise
+                            government subsidies for electric cars and SUVs.</p>
+
+                        <div class="Govt-subsity-car-table container">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">State</th>
+                                        <th scope="col">Subsidy (per kWh) </th>
+                                        <th scope="col">Maximum subsidy</th>
+                                        <th scope="col">Discount on road tax</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maharashtra</td>
+                                        <td>Rs. 5,000</td>
+                                        <td>Rs. 2,50,000</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gujarat</td>
+                                        <td>Rs. 10,000</td>
+                                        <td>Rs. 1,50,000</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Meghalaya</td>
+                                        <td>Rs. 4,000</td>
+                                        <td>Rs. 60,000</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Assam</td>
+                                        <td>Rs. 10,000</td>
+                                        <td>Rs. 1,50,000</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bihar</td>
+                                        <td>Rs. 10,000</td>
+                                        <td>Rs. 1,50,000</td>
+                                        <td>100%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="Evprocess.html" class="text-dark" style="float: right;">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end here -->
+
+
+        <!-- news of Ev market article start here -->
+        <!-- <section class="News-article container" style="margin-top:  90px;">
+            <div class="News-article-cover">
+                <div class="News-article-heading">
+                    <h1> News </h1>
+                </div>
+            </div>
+
+        </section> -->
+        <!-- end here -->
+
+        <!-- contact us start here -->
+        <section class="Contact-us-area container " style="margin-top: 5vw;">
+            <div class="background ">
+                <div class="container">
+                    <div class="screen">
+                        <div class="screen-header">
+                            <div class="screen-header-left">
+                                <div class="screen-header-button close"></div>
+                                <div class="screen-header-button maximize"></div>
+                                <div class="screen-header-button minimize"></div>
+                            </div>
+                            <div class="screen-header-right">
+                                <div class="screen-header-ellipsis"></div>
+                                <div class="screen-header-ellipsis"></div>
+                                <div class="screen-header-ellipsis"></div>
+                            </div>
+                        </div>
+                        <div class="screen-body">
+                            <div class="screen-body-item left">
+                                <div class="app-title">
+                                    <span>CONTACT</span>
+                                    <span>US</span>
+                                </div>
+                                <div class="app-contact">CONTACT INFO : +91 8103715515</div>
+                            </div>
+                            <div class="screen-body-item">
+                                <form onsubmit="sendEmail(); reset(); return false;" class="app-form">
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" type="text" id="name" placeholder="NAME"
+                                            required>
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" type="email" id="email" placeholder="EMAIL"
+                                            required>
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" type="phone" id="phone" placeholder="CONTACT NO"
+                                            required>
+                                    </div>
+                                    <div class="app-form-group message">
+                                        <textarea class="app-form-control" rows="4" id="message"
+                                            placeholder="Type your query here."></textarea>
+                                    </div>
+                                    <div class="app-form-group buttons">
+                                        <button type="cancel" class="app-form-button btn">CANCEL</button>
+                                        <button type="submit" class="app-form-button btn">SEND</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- contact form email of user code -->
+
+        <!-- start here -->
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+
+            function sendEmail() {
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "webconceit@gmail.com",
+                    Password: "Smtp@123",
+                    To: 'Evplanofficial@gmail.com',
+                    From: document.getElementById("email").value,
+                    Subject: "New Contact Form Enquiry",
+                    Body: "And this is the body"
+                }).then(
+                    message => alert("Received, We will Connect with you soon.")
+                );
+            }
+        </script>
+        <!-- end here -->
+
+        <!-- end here -->
+
+        <!-- footer -->
+        <section class="footer mt-5">
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+                    <a href="#"><img style="width: 150px;height: 70px;" src="logo.png" alt="logo"></a>
+                    <!-- <h3>EV<span><i>plan</i></span></h3> -->
+
+                    <p class="footer-links">
+                        <a href="#" class="link-1">Home</a>
+
+                        <a href="#">Vehicle</a>
+
+                        <a href="Evprocess.html">Ev Process</a>
+
+                        <a href="about.html">About</a>
+
+                        <a href="#">Contact</a>
+                    </p>
+
+                </div>
+
+                <div class="footer-center">
+
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>01 , Block G5</span> Chouhan Town, Bhilai, Chhattisgarh</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 8103715515</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="Evplanofficial@gmail.com">Evplanofficial@gmail.com</a></p>
+                    </div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        We are here to help by providing all the information related to electric vehicle ecosystem.
+                        Here you can find the best and suitable electric vehicle of your choice.
+
+                    </p>
+
+                    <div class="footer-icons">
+
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+
+                    </div>
+
+                </div>
+
+            </footer>
+        </section>
+        <!-- end here -->
+
+        <!-- preloader Script start here -->
+        <script>
+            var loader = document.getElementById('preloader');
+            // var iframe = document.getElementById('iframeHidden')
+            // window.addEventListener("load", function () {
+            //     loader.style.display = "none";
+            //     // iframe.style.display = "none";
+            // })
+            function myFunction() {
+
+                setTimeout(function () {
+                    $('#preloader').fadeOut();
+                    loader.style.display = "none";
+                }, 3500)
+            }
+        </script>
+        <!-- end here -->
+
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

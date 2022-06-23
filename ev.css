@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@300&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Alegreya", sans-serif;
+}
+
+
+/* electric vehicle heading start here */
+
+.electric_vehicle h1 {
+  font-weight: bold;
+}
+
+.electric_vehicle {
+  width: 100%;
+  margin-top: 100px;
+  padding: 40px 20px;
+   /* border: 2px solid black; */
+  /* // background-image: url("bgimg2.png"); */
+}
+
+.electric_vehicle h1 {
+    font-size: 34px;
+    color: #6b705c;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+
+.electric_vehicle p {
+    font-size: 14px;
+    margin: 15px 58px;
+    text-align: center;
+  }
+
+
+/* end here */
+
+
+.List_vehicles h1 {
+  font-weight: bold;
+}
+.container {
+  width: 100%;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.sm-flex-order-2 {
+  order: 2;
+}
+div {
+  display: block;
+}
+
+
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+.reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.martop {
+  /* border: 2px solid black; */
+  padding-top: 70px;
+}
+.myths-hear-title {
+  font-family: "Alegreya", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
+  color: #8f1911;
+  padding-bottom: 20px;
+}
+
+.myths-hear-title::before {
+  display: inline-block;
+  content: "";
+  width: 62px;
+  height: 0px;
+  background: #185589;
+  border: 2px solid #185589;
+  margin-bottom: 7px;
+  margin-right: 20px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+img:hover,img:focus {
+  cursor: pointer;
+transform: scale3d(1.10, 1.11, 1);
+transition:ease-in 1s ;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.pt-30 {
+  padding-top: 10px;
+}
+
+.component-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 15px;
+  text-align: left;
+  color: #185589;
+  padding-bottom: 20px;
+}
+
+.ev-awareness-para {
+  font-family: "Alegreya", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+  color: #000;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+
+/* video added start */
+.video-added {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+/* end here */
+
+
+
+/* // footer start here */
+.footer-distributed {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #a20202;
+  font: normal 36px 'Alegreya', sans-serif;
+  /* font-family: "Alegreya", */
+  /* // sans-serif; */
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: rgb(4, 6, 6);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
+
+/* // end here */
+
+/*# sourceMappingURL=ev.css.map */
+
+/* adding image slider
+
+
+.slide-in {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transition: translateX(0%) scale(1);
+} */
